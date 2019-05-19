@@ -1,0 +1,19 @@
+mkdir server
+cd server
+npm init
+npm install express --save
+
+## Deploy app on Heroku - Checklist
+1. Dynamic port :
+Heroku tells us which port our app will use. so we need to make sure that we listen to the port it tells us to.
+Refer line 8 for this where PORT is assigned dynamically
+2. Specify Node environment :
+We need to tell Heroklu which node version to use. 
+So Specify node engine viz node an npm version in package.json file.
+3. Specify start script :
+Instruct heroku what command to run to start our server running.
+Set the start script in package.json file.
+4. Create .gitignore file :
+We must not push dependencies, Heroku will do that for us.
+
+
